@@ -11,6 +11,10 @@ const sequelize = process.env.JAWSDB_URL
       dialectOptions: {
         decimalNumbers: true,
       },
+    }).authenticate().then(() => {
+      console.log('Connection to the database has been established successfully');
+    }).catch(() => {
+      console.error('Unable to connect to the database:', err);
     });
 
 module.exports = sequelize;
