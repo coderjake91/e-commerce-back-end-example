@@ -9,7 +9,8 @@ router.get('/', (req, res) => {
   Category.findAll({
     include: [
         {
-            model: Product
+            model: Product,
+            attributes: []
         }
     ]
 })
@@ -30,7 +31,8 @@ router.get('/:id', (req, res) => {
     },
     include: [
       {
-          model: Product
+          model: Product,
+          attributes: []
       }
     ]
   })
@@ -88,7 +90,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(dbCategoryData => {
       if (!dbCategoryData) {
-        res.status(404).json({ message: 'No user found with this id' });
+        res.status(404).json({ message: 'No Category found with this id' });
         return;
       }
       res.json(dbCategoryData);

@@ -50,9 +50,9 @@ router.get('/:id', (req, res) => {
     }
     ]
   })
-    .then(dbTagData => {
-      if (!dbTagData) {
-        res.status(404).json({ message: 'No Tag found with this id' });
+    .then(dbProductData => {
+      if (!dbProductData) {
+        res.status(404).json({ message: 'No Product found with this id' });
         return;
       }
       res.json(dbTagData);
