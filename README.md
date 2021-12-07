@@ -17,6 +17,7 @@ Example back end for an e-commerce site that uses Express.js, Sequelize.js, and 
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Demo](#demo)
 * [Credits](#credits)
 * [License](#license)
 * [Tests](#tests)
@@ -29,6 +30,10 @@ Clone the repo. Make sure that Node.js is installed locally with npm, navigate t
 ## Usage
 
 Run 'npm start' to initialize the Express.js server and the connection to the db through Sequelize.js. Once the database is seeded, test the API endpoints in a program like Insomnia.
+
+## Demo (Seeding The Database)
+
+[DB-Seeding](https://drive.google.com/file/d/1dmdnTD8Au3s8x-apbJZTEee0lOMd6Dx0/view)
 
 ## Credits
 
