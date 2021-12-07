@@ -1,7 +1,7 @@
 {
   "name": "e-commerce-back-end-example",
   "version": "1.0.0",
-  "description": "Example back end for an e-commerce site that uses Express.js, Sequelize (ORM), and MySQL",
+  "description": "Example back end for an e-commerce site that uses Express.js, Sequalize, and MySQL.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,23 +11,16 @@
     "type": "git",
     "url": "git+https://github.com/coderjake91/e-commerce-back-end-example.git"
   },
-  "keywords": [
-    "Node.js",
-    "Sequelize.js",
-    "MySQL"
-  ],
   "author": "coderjake91",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/coderjake91/e-commerce-back-end-example/issues"
   },
   "homepage": "https://github.com/coderjake91/e-commerce-back-end-example#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mysql2": "^2.3.3",
     "sequelize": "^6.12.0-beta.1"
-  },
-  "devDependencies": {
-    "dotenv": "^10.0.0"
   }
 }
